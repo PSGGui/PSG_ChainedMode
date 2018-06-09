@@ -92,22 +92,22 @@
 
 - (UIView *(^)(CGFloat))g_right {
     return ^(CGFloat g_right) {
-        self.right = g_right;
+        self.g_x(g_right - self.frame.size.width);
         return self;
     };
 }
 
 - (UIView *(^)(CGFloat))g_bottom {
     return ^(CGFloat g_bottom) {
-        self.bottom = g_bottom;
+        self.g_y(g_bottom - self.frame.size.height);
         return self;
     };
 }
 
 - (UIView *(^)(CGPoint position, CGPoint anchorPoint))g_setPositionAtAnchorPoint {
     return ^(CGPoint position, CGPoint anchorPoint) {
-        CGFloat x = position.x - anchorPoint.x * self.width;
-        CGFloat y = position.y - anchorPoint.y * self.height;
+        CGFloat x = position.x - anchorPoint.x * self.frame.size.width;
+        CGFloat y = position.y - anchorPoint.y * self.frame.size.height;
         self.g_origin(CGPointMake(x, y));
         return self;
     };

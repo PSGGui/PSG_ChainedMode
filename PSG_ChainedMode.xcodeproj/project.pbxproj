@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B04946BB20CBC7C6009C13BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B04946BA20CBC7C6009C13BB /* AppDelegate.m */; };
+		B04946BE20CBC7C6009C13BB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04946BD20CBC7C6009C13BB /* ViewController.m */; };
+		B04946C120CBC7C6009C13BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B04946BF20CBC7C6009C13BB /* Main.storyboard */; };
+		B04946C320CBC7C7009C13BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B04946C220CBC7C7009C13BB /* Assets.xcassets */; };
+		B04946C620CBC7C7009C13BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B04946C420CBC7C7009C13BB /* LaunchScreen.storyboard */; };
+		B04946C920CBC7C7009C13BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B04946C820CBC7C7009C13BB /* main.m */; };
+		B04946EC20CBCD7B009C13BB /* UIImageView+PSG_ChainFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = B04946D020CBCD7A009C13BB /* UIImageView+PSG_ChainFunction.m */; };
+		B04946ED20CBCD7B009C13BB /* UIView+PSG_ChainFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = B04946D120CBCD7A009C13BB /* UIView+PSG_ChainFunction.m */; };
+		B04946EE20CBCD7B009C13BB /* UIButton+PSG_ChainFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = B04946D220CBCD7A009C13BB /* UIButton+PSG_ChainFunction.m */; };
+		B04946EF20CBCD7B009C13BB /* UITableView+PSG_ChainFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = B04946D320CBCD7A009C13BB /* UITableView+PSG_ChainFunction.m */; };
+		B04946F020CBCD7B009C13BB /* UICollectionView+PSG_ChainFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = B04946D620CBCD7A009C13BB /* UICollectionView+PSG_ChainFunction.m */; };
+		B04946F120CBCD7B009C13BB /* UITextField+PSG_ChainFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = B04946D920CBCD7A009C13BB /* UITextField+PSG_ChainFunction.m */; };
+		B04946F320CBCD7B009C13BB /* UICollectionViewFlowLayout+PSG_ChainFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = B04946DE20CBCD7A009C13BB /* UICollectionViewFlowLayout+PSG_ChainFunction.m */; };
+		B04946F420CBCD7B009C13BB /* UILabel+PSG_ChainFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = B04946E420CBCD7A009C13BB /* UILabel+PSG_ChainFunction.m */; };
+		B04946F520CBCD7B009C13BB /* UITextView+PSG_ChainFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = B04946E520CBCD7A009C13BB /* UITextView+PSG_ChainFunction.m */; };
+		B04946F620CBCD7B009C13BB /* UIControl+PSG_ChainFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = B04946E720CBCD7A009C13BB /* UIControl+PSG_ChainFunction.m */; };
+		B04946F720CBCD7B009C13BB /* UIScrollView+PSG_ChainFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = B04946E920CBCD7A009C13BB /* UIScrollView+PSG_ChainFunction.m */; };
+		B04946F820CBCD7B009C13BB /* CALayer+PSG_ChainFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = B04946EA20CBCD7A009C13BB /* CALayer+PSG_ChainFunction.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B04946B620CBC7C6009C13BB /* PSG_ChainedMode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PSG_ChainedMode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B04946B920CBC7C6009C13BB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B04946BA20CBC7C6009C13BB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B04946BC20CBC7C6009C13BB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B04946BD20CBC7C6009C13BB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B04946C020CBC7C6009C13BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B04946C220CBC7C7009C13BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B04946C520CBC7C7009C13BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B04946C720CBC7C7009C13BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B04946C820CBC7C7009C13BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B04946D020CBCD7A009C13BB /* UIImageView+PSG_ChainFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+PSG_ChainFunction.m"; sourceTree = "<group>"; };
+		B04946D120CBCD7A009C13BB /* UIView+PSG_ChainFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PSG_ChainFunction.m"; sourceTree = "<group>"; };
+		B04946D220CBCD7A009C13BB /* UIButton+PSG_ChainFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+PSG_ChainFunction.m"; sourceTree = "<group>"; };
+		B04946D320CBCD7A009C13BB /* UITableView+PSG_ChainFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+PSG_ChainFunction.m"; sourceTree = "<group>"; };
+		B04946D420CBCD7A009C13BB /* UITextView+PSG_ChainFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+PSG_ChainFunction.h"; sourceTree = "<group>"; };
+		B04946D520CBCD7A009C13BB /* UILabel+PSG_ChainFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+PSG_ChainFunction.h"; sourceTree = "<group>"; };
+		B04946D620CBCD7A009C13BB /* UICollectionView+PSG_ChainFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+PSG_ChainFunction.m"; sourceTree = "<group>"; };
+		B04946D720CBCD7A009C13BB /* UIScrollView+PSG_ChainFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+PSG_ChainFunction.h"; sourceTree = "<group>"; };
+		B04946D820CBCD7A009C13BB /* CALayer+PSG_ChainFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+PSG_ChainFunction.h"; sourceTree = "<group>"; };
+		B04946D920CBCD7A009C13BB /* UITextField+PSG_ChainFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+PSG_ChainFunction.m"; sourceTree = "<group>"; };
+		B04946DA20CBCD7A009C13BB /* UIControl+PSG_ChainFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+PSG_ChainFunction.h"; sourceTree = "<group>"; };
+		B04946DE20CBCD7A009C13BB /* UICollectionViewFlowLayout+PSG_ChainFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewFlowLayout+PSG_ChainFunction.m"; sourceTree = "<group>"; };
+		B04946DF20CBCD7A009C13BB /* UIButton+PSG_ChainFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+PSG_ChainFunction.h"; sourceTree = "<group>"; };
+		B04946E020CBCD7A009C13BB /* UIView+PSG_ChainFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PSG_ChainFunction.h"; sourceTree = "<group>"; };
+		B04946E120CBCD7A009C13BB /* UIImageView+PSG_ChainFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+PSG_ChainFunction.h"; sourceTree = "<group>"; };
+		B04946E220CBCD7A009C13BB /* UITableView+PSG_ChainFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+PSG_ChainFunction.h"; sourceTree = "<group>"; };
+		B04946E320CBCD7A009C13BB /* UICollectionView+PSG_ChainFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+PSG_ChainFunction.h"; sourceTree = "<group>"; };
+		B04946E420CBCD7A009C13BB /* UILabel+PSG_ChainFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+PSG_ChainFunction.m"; sourceTree = "<group>"; };
+		B04946E520CBCD7A009C13BB /* UITextView+PSG_ChainFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+PSG_ChainFunction.m"; sourceTree = "<group>"; };
+		B04946E620CBCD7A009C13BB /* UICollectionViewFlowLayout+PSG_ChainFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewFlowLayout+PSG_ChainFunction.h"; sourceTree = "<group>"; };
+		B04946E720CBCD7A009C13BB /* UIControl+PSG_ChainFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+PSG_ChainFunction.m"; sourceTree = "<group>"; };
+		B04946E820CBCD7A009C13BB /* UITextField+PSG_ChainFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+PSG_ChainFunction.h"; sourceTree = "<group>"; };
+		B04946E920CBCD7A009C13BB /* UIScrollView+PSG_ChainFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+PSG_ChainFunction.m"; sourceTree = "<group>"; };
+		B04946EA20CBCD7A009C13BB /* CALayer+PSG_ChainFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+PSG_ChainFunction.m"; sourceTree = "<group>"; };
+		B04946EB20CBCD7A009C13BB /* PSG_ChainFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSG_ChainFunction.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B04946B320CBC7C6009C13BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B04946AD20CBC7C6009C13BB = {
+			isa = PBXGroup;
+			children = (
+				B04946B820CBC7C6009C13BB /* PSG_ChainedMode */,
+				B04946B720CBC7C6009C13BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B04946B720CBC7C6009C13BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B04946B620CBC7C6009C13BB /* PSG_ChainedMode.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B04946B820CBC7C6009C13BB /* PSG_ChainedMode */ = {
+			isa = PBXGroup;
+			children = (
+				B04946CF20CBCD7A009C13BB /* PSG_ ChainFunction */,
+				B04946B920CBC7C6009C13BB /* AppDelegate.h */,
+				B04946BA20CBC7C6009C13BB /* AppDelegate.m */,
+				B04946BC20CBC7C6009C13BB /* ViewController.h */,
+				B04946BD20CBC7C6009C13BB /* ViewController.m */,
+				B04946BF20CBC7C6009C13BB /* Main.storyboard */,
+				B04946C220CBC7C7009C13BB /* Assets.xcassets */,
+				B04946C420CBC7C7009C13BB /* LaunchScreen.storyboard */,
+				B04946C720CBC7C7009C13BB /* Info.plist */,
+				B04946C820CBC7C7009C13BB /* main.m */,
+			);
+			path = PSG_ChainedMode;
+			sourceTree = "<group>";
+		};
+		B04946CF20CBCD7A009C13BB /* PSG_ ChainFunction */ = {
+			isa = PBXGroup;
+			children = (
+				B04946EB20CBCD7A009C13BB /* PSG_ChainFunction.h */,
+				B04946D820CBCD7A009C13BB /* CALayer+PSG_ChainFunction.h */,
+				B04946EA20CBCD7A009C13BB /* CALayer+PSG_ChainFunction.m */,
+				B04946DF20CBCD7A009C13BB /* UIButton+PSG_ChainFunction.h */,
+				B04946D220CBCD7A009C13BB /* UIButton+PSG_ChainFunction.m */,
+				B04946E320CBCD7A009C13BB /* UICollectionView+PSG_ChainFunction.h */,
+				B04946D620CBCD7A009C13BB /* UICollectionView+PSG_ChainFunction.m */,
+				B04946E620CBCD7A009C13BB /* UICollectionViewFlowLayout+PSG_ChainFunction.h */,
+				B04946DE20CBCD7A009C13BB /* UICollectionViewFlowLayout+PSG_ChainFunction.m */,
+				B04946DA20CBCD7A009C13BB /* UIControl+PSG_ChainFunction.h */,
+				B04946E720CBCD7A009C13BB /* UIControl+PSG_ChainFunction.m */,
+				B04946E120CBCD7A009C13BB /* UIImageView+PSG_ChainFunction.h */,
+				B04946D020CBCD7A009C13BB /* UIImageView+PSG_ChainFunction.m */,
+				B04946D520CBCD7A009C13BB /* UILabel+PSG_ChainFunction.h */,
+				B04946E420CBCD7A009C13BB /* UILabel+PSG_ChainFunction.m */,
+				B04946D720CBCD7A009C13BB /* UIScrollView+PSG_ChainFunction.h */,
+				B04946E920CBCD7A009C13BB /* UIScrollView+PSG_ChainFunction.m */,
+				B04946E220CBCD7A009C13BB /* UITableView+PSG_ChainFunction.h */,
+				B04946D320CBCD7A009C13BB /* UITableView+PSG_ChainFunction.m */,
+				B04946E820CBCD7A009C13BB /* UITextField+PSG_ChainFunction.h */,
+				B04946D920CBCD7A009C13BB /* UITextField+PSG_ChainFunction.m */,
+				B04946D420CBCD7A009C13BB /* UITextView+PSG_ChainFunction.h */,
+				B04946E520CBCD7A009C13BB /* UITextView+PSG_ChainFunction.m */,
+				B04946E020CBCD7A009C13BB /* UIView+PSG_ChainFunction.h */,
+				B04946D120CBCD7A009C13BB /* UIView+PSG_ChainFunction.m */,
+			);
+			path = "PSG_ ChainFunction";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B04946B520CBC7C6009C13BB /* PSG_ChainedMode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B04946CC20CBC7C7009C13BB /* Build configuration list for PBXNativeTarget "PSG_ChainedMode" */;
+			buildPhases = (
+				B04946B220CBC7C6009C13BB /* Sources */,
+				B04946B320CBC7C6009C13BB /* Frameworks */,
+				B04946B420CBC7C6009C13BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PSG_ChainedMode;
+			productName = PSG_ChainedMode;
+			productReference = B04946B620CBC7C6009C13BB /* PSG_ChainedMode.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B04946AE20CBC7C6009C13BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = GUI;
+				TargetAttributes = {
+					B04946B520CBC7C6009C13BB = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = B04946B120CBC7C6009C13BB /* Build configuration list for PBXProject "PSG_ChainedMode" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B04946AD20CBC7C6009C13BB;
+			productRefGroup = B04946B720CBC7C6009C13BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B04946B520CBC7C6009C13BB /* PSG_ChainedMode */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B04946B420CBC7C6009C13BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B04946C620CBC7C7009C13BB /* LaunchScreen.storyboard in Resources */,
+				B04946C320CBC7C7009C13BB /* Assets.xcassets in Resources */,
+				B04946C120CBC7C6009C13BB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B04946B220CBC7C6009C13BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B04946F520CBCD7B009C13BB /* UITextView+PSG_ChainFunction.m in Sources */,
+				B04946F320CBCD7B009C13BB /* UICollectionViewFlowLayout+PSG_ChainFunction.m in Sources */,
+				B04946EF20CBCD7B009C13BB /* UITableView+PSG_ChainFunction.m in Sources */,
+				B04946F820CBCD7B009C13BB /* CALayer+PSG_ChainFunction.m in Sources */,
+				B04946F120CBCD7B009C13BB /* UITextField+PSG_ChainFunction.m in Sources */,
+				B04946F020CBCD7B009C13BB /* UICollectionView+PSG_ChainFunction.m in Sources */,
+				B04946BE20CBC7C6009C13BB /* ViewController.m in Sources */,
+				B04946C920CBC7C7009C13BB /* main.m in Sources */,
+				B04946F620CBCD7B009C13BB /* UIControl+PSG_ChainFunction.m in Sources */,
+				B04946BB20CBC7C6009C13BB /* AppDelegate.m in Sources */,
+				B04946ED20CBCD7B009C13BB /* UIView+PSG_ChainFunction.m in Sources */,
+				B04946F420CBCD7B009C13BB /* UILabel+PSG_ChainFunction.m in Sources */,
+				B04946EE20CBCD7B009C13BB /* UIButton+PSG_ChainFunction.m in Sources */,
+				B04946EC20CBCD7B009C13BB /* UIImageView+PSG_ChainFunction.m in Sources */,
+				B04946F720CBCD7B009C13BB /* UIScrollView+PSG_ChainFunction.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B04946BF20CBC7C6009C13BB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B04946C020CBC7C6009C13BB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B04946C420CBC7C7009C13BB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B04946C520CBC7C7009C13BB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B04946CA20CBC7C7009C13BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B04946CB20CBC7C7009C13BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B04946CD20CBC7C7009C13BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K86567WA9U;
+				INFOPLIST_FILE = PSG_ChainedMode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.GUI.PSG-ChainedMode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B04946CE20CBC7C7009C13BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K86567WA9U;
+				INFOPLIST_FILE = PSG_ChainedMode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.GUI.PSG-ChainedMode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B04946B120CBC7C6009C13BB /* Build configuration list for PBXProject "PSG_ChainedMode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B04946CA20CBC7C7009C13BB /* Debug */,
+				B04946CB20CBC7C7009C13BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B04946CC20CBC7C7009C13BB /* Build configuration list for PBXNativeTarget "PSG_ChainedMode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B04946CD20CBC7C7009C13BB /* Debug */,
+				B04946CE20CBC7C7009C13BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B04946AE20CBC7C6009C13BB /* Project object */;
+}

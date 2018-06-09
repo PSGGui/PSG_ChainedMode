@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint PSG_ChainedMode.podspec' to ensure this is a
+#  Be sure to run `pod spec lint PSGChainedMode.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -15,9 +15,9 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "PSG_ChainedMode"
-  s.version      = "1.0.0"
-  s.summary      = "A short description of PSG_ChainedMode."
+  s.name         = "PSGChainedMode"
+  s.version      = "0.0.1"
+  s.summary      = "A short description of PSGChainedMode."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                    DESC
 
-  s.homepage     = "https://github.com/GuiLQing/PSG_ChainedMode.git"
+  s.homepage     = "https://github.com/GuiLQing/PSG_ChainedMode"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -64,7 +64,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  # s.platform     = :ios, "9.0"
+  s.platform     = :ios, "9.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -90,7 +90,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "PSG_ChainedMode", "PSG_ChainedMode/PSG_ChainedMode/*.{h,m}"
+  s.source_files  = "PSG_ChainedMode/PSGChainedMode", "*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -129,7 +129,7 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # s.requires_arc = true
+  s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"

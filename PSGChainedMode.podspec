@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "PSGChainedMode"
-  s.version      = "0.0.1"
+  s.version      = "1.0.0"
   s.summary      = "A short description of PSGChainedMode."
 
   s.homepage     = "https://github.com/GuiLQing/PSG_ChainedMode"

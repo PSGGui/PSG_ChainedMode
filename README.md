@@ -21,27 +21,27 @@ UILabel *label = UILabel
 ## <a id="UIButton"></a>UIButton
 ```objc
 UIButton *button = UIButton
-    .g_init
-    .g_title(@"button", UIControlStateNormal)
-    .g_titleColor([UIColor whiteColor], UIControlStateNormal)
-    .g_titleFont([UIFont systemFontOfSize:15.0f])
-    .g_addTarget(self, @selector(buttonAction:), UIControlEventTouchUpInside)
-    .g_size(CGSizeMake(100, 100))
-    .g_setPositionAtAnchorPoint(CGPointMake(100, 200), CGPointZero)
-    .g_buttonMaker;
-    [self.view addSubview:button];
+.g_init
+.g_title(@"button", UIControlStateNormal)
+.g_titleColor([UIColor whiteColor], UIControlStateNormal)
+.g_titleFont([UIFont systemFontOfSize:15.0f])
+.g_addTarget(self, @selector(buttonAction:), UIControlEventTouchUpInside)
+.g_size(CGSizeMake(100, 100))
+.g_setPositionAtAnchorPoint(CGPointMake(100, 200), CGPointZero)
+.g_buttonMaker;
+[self.view addSubview:button];
 ```
 
 ## <a id="UITableView"></a>UITableView
 ```objc
 UITableView *tableView = UITableView
-    .g_initFrameStyle(CGRectZero, UITableViewStyleGrouped)
-    .g_delegate(self)
-    .g_dataSource(self)
-    .g_separatorStyle(UITableViewCellSeparatorStyleNone)
-    .g_scrollsToTop(YES)
-    .g_size(self.view.frame.size)
-    .g_setPositionAtAnchorPoint(CGPointZero, CGPointZero)
-    .g_tableViewMaker;
-    [self.view addSubview:tableView];
+.g_initFrameStyle(CGRectZero, UITableViewStyleGrouped)
+.g_delegate(self)
+.g_dataSource(self)
+.g_separatorStyle(UITableViewCellSeparatorStyleNone)
+.g_scrollsToTop(YES)
+.g_size(self.view.frame.size)
+.g_setPositionAtAnchorPoint(CGPointZero, CGPointZero)
+.g_tableViewMaker;
+[self.view addSubview:tableView];
 ```

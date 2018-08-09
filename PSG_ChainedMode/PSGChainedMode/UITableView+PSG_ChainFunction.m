@@ -22,6 +22,12 @@
     return (UIScrollView *)self;
 }
 
++ (UITableView *(^)(CGRect rect, UITableViewStyle style))g_initFrameStyle {
+    return ^(CGRect rect, UITableViewStyle style) {
+        return [[UITableView alloc] initWithFrame:rect style:style];
+    };
+}
+
 #pragma mark - tableView
 
 - (UITableView *(^)(id <UITableViewDataSource>))g_dataSource {

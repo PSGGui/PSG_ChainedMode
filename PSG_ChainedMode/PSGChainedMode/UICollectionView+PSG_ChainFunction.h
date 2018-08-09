@@ -16,6 +16,8 @@
 
 - (UIScrollView *)g_scrollMaker;
 
++ (UICollectionView *(^)(CGRect rect, UICollectionViewLayout *layout))g_initFrameLayout;
+
 #pragma mark - collectionView
 
 - (UICollectionView *(^)(UICollectionViewLayout *))g_collectionViewLayout;

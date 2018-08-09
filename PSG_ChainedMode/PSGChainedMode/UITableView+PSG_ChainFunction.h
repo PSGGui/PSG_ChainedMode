@@ -16,6 +16,7 @@
 
 - (UIScrollView *)g_scrollMaker;
 
++ (UITableView *(^)(CGRect rect, UITableViewStyle style))g_initFrameStyle;
 
 #pragma mark - tableView
 

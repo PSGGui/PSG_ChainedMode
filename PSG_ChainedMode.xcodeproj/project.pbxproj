@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		90A9A0D8211C0FFC008BF845 /* UITableView+PSG_ChainFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A9A0D6211C0FFC008BF845 /* UITableView+PSG_ChainFunction.m */; };
 		B04946BB20CBC7C6009C13BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B04946BA20CBC7C6009C13BB /* AppDelegate.m */; };
 		B04946BE20CBC7C6009C13BB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04946BD20CBC7C6009C13BB /* ViewController.m */; };
 		B04946C120CBC7C6009C13BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B04946BF20CBC7C6009C13BB /* Main.storyboard */; };
@@ -16,7 +17,6 @@
 		B049471320CBD783009C13BB /* UIImageView+PSG_ChainFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = B04946FA20CBD783009C13BB /* UIImageView+PSG_ChainFunction.m */; };
 		B049471420CBD783009C13BB /* UIView+PSG_ChainFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = B04946FB20CBD783009C13BB /* UIView+PSG_ChainFunction.m */; };
 		B049471520CBD783009C13BB /* UIButton+PSG_ChainFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = B04946FC20CBD783009C13BB /* UIButton+PSG_ChainFunction.m */; };
-		B049471620CBD783009C13BB /* UITableView+PSG_ChainFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = B04946FD20CBD783009C13BB /* UITableView+PSG_ChainFunction.m */; };
 		B049471720CBD783009C13BB /* UICollectionView+PSG_ChainFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = B049470020CBD783009C13BB /* UICollectionView+PSG_ChainFunction.m */; };
 		B049471820CBD783009C13BB /* UITextField+PSG_ChainFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = B049470320CBD783009C13BB /* UITextField+PSG_ChainFunction.m */; };
 		B049471920CBD783009C13BB /* UICollectionViewFlowLayout+PSG_ChainFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = B049470520CBD783009C13BB /* UICollectionViewFlowLayout+PSG_ChainFunction.m */; };
@@ -28,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		90A9A0D6211C0FFC008BF845 /* UITableView+PSG_ChainFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+PSG_ChainFunction.m"; sourceTree = "<group>"; };
+		90A9A0D7211C0FFC008BF845 /* UITableView+PSG_ChainFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+PSG_ChainFunction.h"; sourceTree = "<group>"; };
 		B04946B620CBC7C6009C13BB /* PSG_ChainedMode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PSG_ChainedMode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B04946B920CBC7C6009C13BB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B04946BA20CBC7C6009C13BB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -41,7 +43,6 @@
 		B04946FA20CBD783009C13BB /* UIImageView+PSG_ChainFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+PSG_ChainFunction.m"; sourceTree = "<group>"; };
 		B04946FB20CBD783009C13BB /* UIView+PSG_ChainFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PSG_ChainFunction.m"; sourceTree = "<group>"; };
 		B04946FC20CBD783009C13BB /* UIButton+PSG_ChainFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+PSG_ChainFunction.m"; sourceTree = "<group>"; };
-		B04946FD20CBD783009C13BB /* UITableView+PSG_ChainFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+PSG_ChainFunction.m"; sourceTree = "<group>"; };
 		B04946FE20CBD783009C13BB /* UITextView+PSG_ChainFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+PSG_ChainFunction.h"; sourceTree = "<group>"; };
 		B04946FF20CBD783009C13BB /* UILabel+PSG_ChainFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+PSG_ChainFunction.h"; sourceTree = "<group>"; };
 		B049470020CBD783009C13BB /* UICollectionView+PSG_ChainFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+PSG_ChainFunction.m"; sourceTree = "<group>"; };
@@ -53,7 +54,6 @@
 		B049470620CBD783009C13BB /* UIButton+PSG_ChainFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+PSG_ChainFunction.h"; sourceTree = "<group>"; };
 		B049470720CBD783009C13BB /* UIView+PSG_ChainFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PSG_ChainFunction.h"; sourceTree = "<group>"; };
 		B049470820CBD783009C13BB /* UIImageView+PSG_ChainFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+PSG_ChainFunction.h"; sourceTree = "<group>"; };
-		B049470920CBD783009C13BB /* UITableView+PSG_ChainFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+PSG_ChainFunction.h"; sourceTree = "<group>"; };
 		B049470A20CBD783009C13BB /* UICollectionView+PSG_ChainFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+PSG_ChainFunction.h"; sourceTree = "<group>"; };
 		B049470B20CBD783009C13BB /* UILabel+PSG_ChainFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+PSG_ChainFunction.m"; sourceTree = "<group>"; };
 		B049470C20CBD783009C13BB /* UITextView+PSG_ChainFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+PSG_ChainFunction.m"; sourceTree = "<group>"; };
@@ -127,10 +127,10 @@
 				B04946FA20CBD783009C13BB /* UIImageView+PSG_ChainFunction.m */,
 				B04946FF20CBD783009C13BB /* UILabel+PSG_ChainFunction.h */,
 				B049470B20CBD783009C13BB /* UILabel+PSG_ChainFunction.m */,
+				90A9A0D7211C0FFC008BF845 /* UITableView+PSG_ChainFunction.h */,
+				90A9A0D6211C0FFC008BF845 /* UITableView+PSG_ChainFunction.m */,
 				B049470120CBD783009C13BB /* UIScrollView+PSG_ChainFunction.h */,
 				B049471020CBD783009C13BB /* UIScrollView+PSG_ChainFunction.m */,
-				B049470920CBD783009C13BB /* UITableView+PSG_ChainFunction.h */,
-				B04946FD20CBD783009C13BB /* UITableView+PSG_ChainFunction.m */,
 				B049470F20CBD783009C13BB /* UITextField+PSG_ChainFunction.h */,
 				B049470320CBD783009C13BB /* UITextField+PSG_ChainFunction.m */,
 				B04946FE20CBD783009C13BB /* UITextView+PSG_ChainFunction.h */,
@@ -212,7 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B049471E20CBD783009C13BB /* CALayer+PSG_ChainFunction.m in Sources */,
-				B049471620CBD783009C13BB /* UITableView+PSG_ChainFunction.m in Sources */,
+				90A9A0D8211C0FFC008BF845 /* UITableView+PSG_ChainFunction.m in Sources */,
 				B049471820CBD783009C13BB /* UITextField+PSG_ChainFunction.m in Sources */,
 				B049471720CBD783009C13BB /* UICollectionView+PSG_ChainFunction.m in Sources */,
 				B04946BE20CBC7C6009C13BB /* ViewController.m in Sources */,

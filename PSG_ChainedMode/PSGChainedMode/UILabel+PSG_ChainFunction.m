@@ -133,6 +133,11 @@
     };
 }
 
+- (UILabel *)g_sizeToFit {
+    [self sizeToFit];
+    return self;
+}
+
 #pragma mark layer
 - (CALayer *)g_layerMaker {
     return self.layer;

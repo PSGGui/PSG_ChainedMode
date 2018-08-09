@@ -45,3 +45,54 @@ UITableView *tableView = UITableView
 .g_tableViewMaker;
 [self.view addSubview:tableView];
 ```
+
+## <a id="UICollectionView"></a>UICollectionView
+```objc
+UICollectionView *collectionView = UICollectionView
+.g_initFrameLayout(self.view.frame, UICollectionViewFlowLayout
+.g_init
+.g_itemSize(CGSizeMake(50, 50))
+.g_scrollDirection(UICollectionViewScrollDirectionVertical)
+.g_minimumLineSpacing(5)
+.g_minimumInteritemSpacing(5)
+.g_sectionInset(UIEdgeInsetsMake(5, 5, 5, 5)))
+.g_delegate(self)
+.g_dataSource(self)
+.g_scrollEnabled(YES)
+.g_showsVerticalScrollIndicator(NO)
+.g_showsHorizontalScrollIndicator(NO)
+.g_bounces(NO)
+.g_alwaysBounceVertical(YES)
+.g_alwaysBounceHorizontal(NO)
+.g_backgroundColor([UIColor whiteColor])
+.g_collectionViewMaker;
+[self.view addSubview:collectionView];
+```
+
+## <a id="UITextField"></a>UITextField
+```objc
+UITextField *textFiled = UITextField
+.g_init
+.g_textColor([UIColor blackColor])
+.g_font([UIFont systemFontOfSize:15])
+.g_borderStyle(UITextBorderStyleNone)
+.g_clearButtonMode(UITextFieldViewModeAlways)
+.g_leftView(UILabel
+.g_init
+.g_text(@"label")
+.g_textColor([UIColor blackColor])
+.g_textAlignment(NSTextAlignmentCenter)
+.g_sizeToFit)
+.g_leftViewMode(UITextFieldViewModeAlways)
+.g_placeholder(@"textFiled")
+.g_delegate(self)
+.g_rightView(nil)
+.g_rightViewMode(UITextFieldViewModeAlways)
+.g_clearsOnBeginEditing(YES)
+.g_secureTextEntry(YES)
+.g_backgroundColor([UIColor whiteColor])
+.g_size(CGSizeMake(self.view.frame.size.width, 40.0f))
+.g_setPositionAtAnchorPoint(CGPointMake(0, self.view.frame.size.height / 2),CGPointMake(0, 0.5))
+.g_textFieldMaker;
+[self.view addSubview:textFiled];
+```

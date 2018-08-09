@@ -22,6 +22,12 @@
     return (UIScrollView *)self;
 }
 
++ (UICollectionView *(^)(CGRect rect, UICollectionViewLayout *layout))g_initFrameLayout {
+    return ^(CGRect rect, UICollectionViewLayout layout) {
+        return [[UICollectionView alloc] initWithFrame:rect collectionViewLayout:layout];
+    };
+}
+
 #pragma mark - collectionView
 
 - (UICollectionView *(^)(UICollectionViewLayout *))g_collectionViewLayout {

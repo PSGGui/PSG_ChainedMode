@@ -37,6 +37,7 @@
 
 - (UILabel *(^)(BOOL))g_allowsDefaultTighteningForTruncation NS_AVAILABLE_IOS(9_0);
 - (UILabel *(^)(CGFloat))g_preferredMaxLayoutWidth NS_AVAILABLE_IOS(6_0);
+- (UILabel *)g_sizeToFit;
 
 #pragma mark layer
 - (CALayer *)g_layerMaker;

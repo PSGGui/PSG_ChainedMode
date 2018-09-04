@@ -250,6 +250,20 @@
     };
 }
 
+- (UITextField *(^)(UIView *))g_inputAccessoryView {
+    return ^(UIView *inputAccessoryView) {
+        self.inputAccessoryView = inputAccessoryView;
+        return self;
+    };
+}
+
+- (UITextField *(^)(UIView *))g_inputView {
+    return ^(UIView *inputView) {
+        self.inputView = inputView;
+        return self;
+    };
+}
+
 #pragma mark layer
 - (CALayer *)g_layerMaker {
     return self.layer;

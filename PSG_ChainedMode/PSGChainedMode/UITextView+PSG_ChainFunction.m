@@ -201,6 +201,13 @@
     };
 }
 
+- (UITextView *(^)(UIView *))g_inputAccessoryView {
+    return ^(UIView *inputAccessoryView) {
+        self.inputAccessoryView = inputAccessoryView;
+        return self;
+    };
+}
+
 #pragma mark layer
 - (CALayer *)g_layerMaker {
     return self.layer;

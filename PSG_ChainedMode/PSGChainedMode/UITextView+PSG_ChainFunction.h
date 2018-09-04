@@ -52,6 +52,7 @@
 
 - (UITextView *(^)(UIEdgeInsets))g_textContainerInset;
 - (UITextView *(^)(NSDictionary<NSString *, id> *))g_linkTextAttributes NS_AVAILABLE_IOS(7_0);
+- (UITextView *(^)(UIView *))g_inputAccessoryView;
 
 #pragma mark layer
 - (CALayer *)g_layerMaker;

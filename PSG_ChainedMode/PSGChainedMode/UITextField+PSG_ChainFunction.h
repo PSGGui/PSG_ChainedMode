@@ -61,6 +61,9 @@
 - (UITextField *(^)(BOOL))g_clearsOnInsertion NS_AVAILABLE_IOS(6_0);
 - (UITextField *(^)(id, SEL, UIControlEvents))g_targetAction;
 
+- (UITextField *(^)(UIView *))g_inputAccessoryView;
+- (UITextField *(^)(UIView *))g_inputView;
+
 #pragma mark layer
 - (CALayer *)g_layerMaker;
 

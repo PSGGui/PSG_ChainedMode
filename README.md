@@ -1,5 +1,9 @@
 # PSG_ChainedMode
 
+```objc
+pod 'PSGChainedMode'
+```
+
 相信大家使用过Masonry或者是SDAutoLayout的应该都清楚什么叫链式编程，现在很多框架也越来越多的使用链式开发思想，这里我写了一个关于OC中常用的几种控件的链式编程的分类
 
 ## <a id="UILabel"></a>UILabel

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5CA68D17F4E1CBCCA99FEFFA /* libPods-PSG_ChainedMode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC368D488B3441E8B37C793A /* libPods-PSG_ChainedMode.a */; };
 		90A9A0D8211C0FFC008BF845 /* UITableView+PSG_ChainFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A9A0D6211C0FFC008BF845 /* UITableView+PSG_ChainFunction.m */; };
 		B04946BB20CBC7C6009C13BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B04946BA20CBC7C6009C13BB /* AppDelegate.m */; };
 		B04946BE20CBC7C6009C13BB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04946BD20CBC7C6009C13BB /* ViewController.m */; };
@@ -25,9 +26,11 @@
 		B049471C20CBD783009C13BB /* UIControl+PSG_ChainFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = B049470E20CBD783009C13BB /* UIControl+PSG_ChainFunction.m */; };
 		B049471D20CBD783009C13BB /* UIScrollView+PSG_ChainFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = B049471020CBD783009C13BB /* UIScrollView+PSG_ChainFunction.m */; };
 		B049471E20CBD783009C13BB /* CALayer+PSG_ChainFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = B049471120CBD783009C13BB /* CALayer+PSG_ChainFunction.m */; };
+		CB0FF2B2228C3EE300A0BF1F /* NSObject+PSG_Customer_ChainFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0FF2B1228C3EE300A0BF1F /* NSObject+PSG_Customer_ChainFunction.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1EC04E72656DA796F032CF56 /* Pods-PSG_ChainedMode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PSG_ChainedMode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PSG_ChainedMode/Pods-PSG_ChainedMode.debug.xcconfig"; sourceTree = "<group>"; };
 		90A9A0D6211C0FFC008BF845 /* UITableView+PSG_ChainFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+PSG_ChainFunction.m"; sourceTree = "<group>"; };
 		90A9A0D7211C0FFC008BF845 /* UITableView+PSG_ChainFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+PSG_ChainFunction.h"; sourceTree = "<group>"; };
 		B04946B620CBC7C6009C13BB /* PSG_ChainedMode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PSG_ChainedMode.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +66,10 @@
 		B049471020CBD783009C13BB /* UIScrollView+PSG_ChainFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+PSG_ChainFunction.m"; sourceTree = "<group>"; };
 		B049471120CBD783009C13BB /* CALayer+PSG_ChainFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+PSG_ChainFunction.m"; sourceTree = "<group>"; };
 		B049471220CBD783009C13BB /* PSG_ChainFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSG_ChainFunction.h; sourceTree = "<group>"; };
+		CB0FF2B0228C3EE300A0BF1F /* NSObject+PSG_Customer_ChainFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PSG_Customer_ChainFunction.h"; sourceTree = "<group>"; };
+		CB0FF2B1228C3EE300A0BF1F /* NSObject+PSG_Customer_ChainFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PSG_Customer_ChainFunction.m"; sourceTree = "<group>"; };
+		DC368D488B3441E8B37C793A /* libPods-PSG_ChainedMode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PSG_ChainedMode.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5622D7FCD9E2F586A9AEED6 /* Pods-PSG_ChainedMode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PSG_ChainedMode.release.xcconfig"; path = "Pods/Target Support Files/Pods-PSG_ChainedMode/Pods-PSG_ChainedMode.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,17 +77,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CA68D17F4E1CBCCA99FEFFA /* libPods-PSG_ChainedMode.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A0C86638B340EA9F4A85FF0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1EC04E72656DA796F032CF56 /* Pods-PSG_ChainedMode.debug.xcconfig */,
+				F5622D7FCD9E2F586A9AEED6 /* Pods-PSG_ChainedMode.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B04946AD20CBC7C6009C13BB = {
 			isa = PBXGroup;
 			children = (
 				B04946B820CBC7C6009C13BB /* PSG_ChainedMode */,
 				B04946B720CBC7C6009C13BB /* Products */,
+				3A0C86638B340EA9F4A85FF0 /* Pods */,
+				CB8BB749E0D277166C69B465 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +131,7 @@
 		B04946F920CBD783009C13BB /* PSGChainedMode */ = {
 			isa = PBXGroup;
 			children = (
+				CB0FF2AF228C3EE300A0BF1F /* PSG_Customer_ChainFunction */,
 				B049471220CBD783009C13BB /* PSG_ChainFunction.h */,
 				B049470220CBD783009C13BB /* CALayer+PSG_ChainFunction.h */,
 				B049471120CBD783009C13BB /* CALayer+PSG_ChainFunction.m */,
@@ -141,6 +161,23 @@
 			path = PSGChainedMode;
 			sourceTree = "<group>";
 		};
+		CB0FF2AF228C3EE300A0BF1F /* PSG_Customer_ChainFunction */ = {
+			isa = PBXGroup;
+			children = (
+				CB0FF2B0228C3EE300A0BF1F /* NSObject+PSG_Customer_ChainFunction.h */,
+				CB0FF2B1228C3EE300A0BF1F /* NSObject+PSG_Customer_ChainFunction.m */,
+			);
+			path = PSG_Customer_ChainFunction;
+			sourceTree = "<group>";
+		};
+		CB8BB749E0D277166C69B465 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC368D488B3441E8B37C793A /* libPods-PSG_ChainedMode.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -148,6 +185,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B04946CC20CBC7C7009C13BB /* Build configuration list for PBXNativeTarget "PSG_ChainedMode" */;
 			buildPhases = (
+				69A3F642199EB0B1AE60C65F /* [CP] Check Pods Manifest.lock */,
 				B04946B220CBC7C6009C13BB /* Sources */,
 				B04946B320CBC7C6009C13BB /* Frameworks */,
 				B04946B420CBC7C6009C13BB /* Resources */,
@@ -206,6 +244,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		69A3F642199EB0B1AE60C65F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PSG_ChainedMode-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B04946B220CBC7C6009C13BB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -217,6 +276,7 @@
 				B049471720CBD783009C13BB /* UICollectionView+PSG_ChainFunction.m in Sources */,
 				B04946BE20CBC7C6009C13BB /* ViewController.m in Sources */,
 				B049471B20CBD783009C13BB /* UITextView+PSG_ChainFunction.m in Sources */,
+				CB0FF2B2228C3EE300A0BF1F /* NSObject+PSG_Customer_ChainFunction.m in Sources */,
 				B04946C920CBC7C7009C13BB /* main.m in Sources */,
 				B049471A20CBD783009C13BB /* UILabel+PSG_ChainFunction.m in Sources */,
 				B049471920CBD783009C13BB /* UICollectionViewFlowLayout+PSG_ChainFunction.m in Sources */,
@@ -363,6 +423,7 @@
 		};
 		B04946CD20CBC7C7009C13BB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EC04E72656DA796F032CF56 /* Pods-PSG_ChainedMode.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -380,6 +441,7 @@
 		};
 		B04946CE20CBC7C7009C13BB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5622D7FCD9E2F586A9AEED6 /* Pods-PSG_ChainedMode.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

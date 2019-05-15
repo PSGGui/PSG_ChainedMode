@@ -37,7 +37,7 @@ Pod::Spec.new do |s|
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
-  # s.framework  = "SomeFramework"
+  s.framework  = "ReactiveObjC"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"

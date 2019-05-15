@@ -43,36 +43,36 @@
     .g_buttonMaker;
     [self.view addSubview:button];
     
-//    UITableView *tableView = UITableView
-//    .g_initFrameStyle(CGRectZero, UITableViewStyleGrouped)
-//    .g_delegate(self)
-//    .g_dataSource(self)
-//    .g_separatorStyle(UITableViewCellSeparatorStyleNone)
-//    .g_scrollsToTop(YES)
-//    .g_size(self.view.frame.size)
-//    .g_setPositionAtAnchorPoint(CGPointZero, CGPointZero)
-//    .g_tableViewMaker;
-//    [self.view addSubview:tableView];
+    UITableView *tableView = UITableView
+    .g_initFrameStyle(CGRectZero, UITableViewStyleGrouped)
+    .g_delegate(self)
+    .g_dataSource(self)
+    .g_separatorStyle(UITableViewCellSeparatorStyleNone)
+    .g_scrollsToTop(YES)
+    .g_size(self.view.frame.size)
+    .g_setPositionAtAnchorPoint(CGPointZero, CGPointZero)
+    .g_tableViewMaker;
+    [self.view addSubview:tableView];
     
-//    UICollectionView *collectionView = UICollectionView
-//    .g_initFrameLayout(self.view.frame, UICollectionViewFlowLayout
-//                       .g_init
-//                       .g_itemSize(CGSizeMake(50, 50))
-//                       .g_scrollDirection(UICollectionViewScrollDirectionVertical)
-//                       .g_minimumLineSpacing(5)
-//                       .g_minimumInteritemSpacing(5)
-//                       .g_sectionInset(UIEdgeInsetsMake(5, 5, 5, 5)))
-//    .g_delegate(self)
-//    .g_dataSource(self)
-//    .g_scrollEnabled(YES)
-//    .g_showsVerticalScrollIndicator(NO)
-//    .g_showsHorizontalScrollIndicator(NO)
-//    .g_bounces(NO)
-//    .g_alwaysBounceVertical(YES)
-//    .g_alwaysBounceHorizontal(NO)
-//    .g_backgroundColor([UIColor whiteColor])
-//    .g_collectionViewMaker;
-//    [self.view addSubview:collectionView];
+    UICollectionView *collectionView = UICollectionView
+    .g_initFrameLayout(self.view.frame, UICollectionViewFlowLayout
+                       .g_init
+                       .g_itemSize(CGSizeMake(50, 50))
+                       .g_scrollDirection(UICollectionViewScrollDirectionVertical)
+                       .g_minimumLineSpacing(5)
+                       .g_minimumInteritemSpacing(5)
+                       .g_sectionInset(UIEdgeInsetsMake(5, 5, 5, 5)))
+    .g_delegate(self)
+    .g_dataSource(self)
+    .g_scrollEnabled(YES)
+    .g_showsVerticalScrollIndicator(NO)
+    .g_showsHorizontalScrollIndicator(NO)
+    .g_bounces(NO)
+    .g_alwaysBounceVertical(YES)
+    .g_alwaysBounceHorizontal(NO)
+    .g_backgroundColor([UIColor whiteColor])
+    .g_collectionViewMaker;
+    [self.view addSubview:collectionView];
     
     UITextField *textFiled = UITextField
     .g_init

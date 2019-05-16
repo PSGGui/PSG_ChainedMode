@@ -37,15 +37,15 @@ Pod::Spec.new do |s|
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
-  s.framework  = "ReactiveObjC"
+  # s.framework  = ""
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
-  # s.library   = "iconv"
+  # s.library   = "ReactiveObjC"
   # s.libraries = "iconv", "xml2"
 
   s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependency "JSONKit", "~> 1.4"
+  s.dependency "ReactiveObjC"
 
 end

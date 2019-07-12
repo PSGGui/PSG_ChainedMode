@@ -21,5 +21,6 @@
 #import "UICollectionViewFlowLayout+PSG_ChainFunction.h"
 #import "CALayer+PSG_ChainFunction.h"
 #import "UIControl+PSG_ChainFunction.h"
+#import "NSObject+PSG_Customer_ChainFunction.h"
 
 #endif /* PSG_ChainFunction_h */

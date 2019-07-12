@@ -31,6 +31,8 @@
 
 #pragma mark - attribute
 
+- (UIView *(^)(NSInteger))g_tag;
+
 //UIViewGeometry
 - (UIView *(^)(CGRect))g_frame;
 - (UIView *(^)(CGRect))g_bounds;

@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "PSGChainedMode"
-  s.version      = "1.1.3"
+  s.version      = "1.1.4"
   s.summary      = "A short description of PSGChainedMode."
 
   s.homepage     = "https://github.com/GuiLQing/PSG_ChainedMode"
@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/GuiLQing/PSG_ChainedMode.git", :tag => "#{s.version}" }
 
-  s.source_files  = "PSG_ChainedMode/PSGChainedMode", "*.{h,m}"
+  s.source_files  = "PSG_ChainedMode/PSGChainedMode/**/*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"

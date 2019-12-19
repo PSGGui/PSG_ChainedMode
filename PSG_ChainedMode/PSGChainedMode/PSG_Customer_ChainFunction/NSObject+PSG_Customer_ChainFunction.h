@@ -15,15 +15,15 @@
 
 @interface UIView (PSG_Customer_ChainFunction)
 
-- (UIView *(^)(NSUInteger numberOfTapsRequired, NSUInteger numberOfTouchesRequired, void(^subscribeNext)(UIGestureRecognizer *x)))g_tap_subscribeNext;
-- (UIView *(^)(NSUInteger numberOfTapsRequired, NSUInteger numberOfTouchesRequired, CFTimeInterval minimumPressDuration, CGFloat allowableMovement, void(^subscribeNext)(UIGestureRecognizer *x)))g_longPress_subscribeNext;
+@property (nonatomic, copy, readonly) UIView *(^g_tap_subscribeNext)(NSUInteger numberOfTapsRequired, NSUInteger numberOfTouchesRequired, void(^subscribeNext)(UIGestureRecognizer *x));
+@property (nonatomic, copy, readonly) UIView *(^g_longPress_subscribeNext)(NSUInteger numberOfTapsRequired, NSUInteger numberOfTouchesRequired, CFTimeInterval minimumPressDuration, CGFloat allowableMovement, void(^subscribeNext)(UIGestureRecognizer *x));
 
-- (UIView *(^)(void(^g_makeTransition)(UIView *view)))g_makeTransition;
+@property (nonatomic, copy, readonly) UIView *(^g_makeTransition)(void(^g_makeTransition)(UIView *view));
 
 @end
 
 @interface UIButton (PSG_Customer_ChainFunction)
 
-- (UIButton *(^)(UIControlEvents events, void(^block)(UIButton *button)))g_subscribeNext;
+@property (nonatomic, copy, readonly) UIButton *(^g_subscribeNext)(UIControlEvents events, void(^block)(UIButton *button));
 
 @end

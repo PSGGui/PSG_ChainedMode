@@ -18,41 +18,41 @@
 
 #pragma mark - UITextInputTraits
 
-- (UITextView *(^)(UITextAutocapitalizationType))g_autocapitalizationType;
-- (UITextView *(^)(UITextAutocorrectionType))g_autocorrectionType;
-- (UITextView *(^)(UITextSpellCheckingType))g_spellCheckingType NS_AVAILABLE_IOS(5_0);
-- (UITextView *(^)(UITextSmartQuotesType))g_smartQuotesType NS_AVAILABLE_IOS(11_0);
-- (UITextView *(^)(UITextSmartDashesType))g_smartDashesType NS_AVAILABLE_IOS(11_0);
-- (UITextView *(^)(UITextSmartInsertDeleteType))g_smartInsertDeleteType NS_AVAILABLE_IOS(11_0);
-- (UITextView *(^)(UIKeyboardType))g_keyboardType;
-- (UITextView *(^)(UIKeyboardAppearance))g_keyboardAppearance;
-- (UITextView *(^)(UIReturnKeyType))g_returnKeyType;
-- (UITextView *(^)(BOOL))g_enablesReturnKeyAutomatically;
-- (UITextView *(^)(BOOL))g_secureTextEntry;
-- (UITextView *(^)(UITextContentType))g_textContentType NS_AVAILABLE_IOS(10_0);
+@property (nonatomic, copy, readonly) UITextView *(^g_autocapitalizationType)(UITextAutocapitalizationType);
+@property (nonatomic, copy, readonly) UITextView *(^g_autocorrectionType)(UITextAutocorrectionType);
+@property (nonatomic, copy, readonly) UITextView *(^g_spellCheckingType)(UITextSpellCheckingType) NS_AVAILABLE_IOS(5_0);
+@property (nonatomic, copy, readonly) UITextView *(^g_smartQuotesType)(UITextSmartQuotesType) NS_AVAILABLE_IOS(11_0);
+@property (nonatomic, copy, readonly) UITextView *(^g_smartDashesType)(UITextSmartDashesType) NS_AVAILABLE_IOS(11_0);
+@property (nonatomic, copy, readonly) UITextView *(^g_smartInsertDeleteType)(UITextSmartInsertDeleteType) NS_AVAILABLE_IOS(11_0);
+@property (nonatomic, copy, readonly) UITextView *(^g_keyboardType)(UIKeyboardType);
+@property (nonatomic, copy, readonly) UITextView *(^g_keyboardAppearance)(UIKeyboardAppearance);
+@property (nonatomic, copy, readonly) UITextView *(^g_returnKeyType)(UIReturnKeyType);
+@property (nonatomic, copy, readonly) UITextView *(^g_enablesReturnKeyAutomatically)(BOOL);
+@property (nonatomic, copy, readonly) UITextView *(^g_secureTextEntry)(BOOL);
+@property (nonatomic, copy, readonly) UITextView *(^g_textContentType)(UITextContentType) NS_AVAILABLE_IOS(10_0);
 
 #pragma mark - UIContentSizeCategoryAdjusting
-- (UITextView *(^)(BOOL))g_adjustsFontForContentSizeCategory NS_AVAILABLE_IOS(10_0);
+@property (nonatomic, copy, readonly) UITextView *(^g_adjustsFontForContentSizeCategory)(BOOL) NS_AVAILABLE_IOS(10_0);
 
 #pragma mark - textView
-- (UITextView *(^)(id<UITextViewDelegate>))g_delegate;
-- (UITextView *(^)(NSString *))g_text;
-- (UITextView *(^)(UIColor *))g_textColor;
-- (UITextView *(^)(UIFont *))g_font;
-- (UITextView *(^)(NSTextAlignment))g_textAlignment;
-- (UITextView *(^)(NSRange))g_selectedRange;
-- (UITextView *(^)(BOOL))g_editable;
-- (UITextView *(^)(BOOL))g_selectable NS_AVAILABLE_IOS(7_0);
+@property (nonatomic, copy, readonly) UITextView *(^g_delegate)(id<UITextViewDelegate>);
+@property (nonatomic, copy, readonly) UITextView *(^g_text)(NSString *);
+@property (nonatomic, copy, readonly) UITextView *(^g_textColor)(UIColor *);
+@property (nonatomic, copy, readonly) UITextView *(^g_font)(UIFont *);
+@property (nonatomic, copy, readonly) UITextView *(^g_textAlignment)(NSTextAlignment);
+@property (nonatomic, copy, readonly) UITextView *(^g_selectedRange)(NSRange);
+@property (nonatomic, copy, readonly) UITextView *(^g_editable)(BOOL);
+@property (nonatomic, copy, readonly) UITextView *(^g_selectable)(BOOL) NS_AVAILABLE_IOS(7_0);
 
-- (UITextView *(^)(UIDataDetectorTypes))g_dataDetectorTypes NS_AVAILABLE_IOS(3_0);
-- (UITextView *(^)(BOOL))g_allowsEditingTextAttributes NS_AVAILABLE_IOS(6_0);
-- (UITextView *(^)(NSAttributedString *))g_attributedText NS_AVAILABLE_IOS(6_0);
-- (UITextView *(^)(NSDictionary<NSString *, id> *))g_typingAttributes NS_AVAILABLE_IOS(6_0);
-- (UITextView *(^)(BOOL))g_clearsOnInsertion NS_AVAILABLE_IOS(6_0);
+@property (nonatomic, copy, readonly) UITextView *(^g_dataDetectorTypes)(UIDataDetectorTypes) NS_AVAILABLE_IOS(3_0);
+@property (nonatomic, copy, readonly) UITextView *(^g_allowsEditingTextAttributes)(BOOL) NS_AVAILABLE_IOS(6_0);
+@property (nonatomic, copy, readonly) UITextView *(^g_attributedText)(NSAttributedString *) NS_AVAILABLE_IOS(6_0);
+@property (nonatomic, copy, readonly) UITextView *(^g_typingAttributes)(NSDictionary<NSString *, id> *) NS_AVAILABLE_IOS(6_0);
+@property (nonatomic, copy, readonly) UITextView *(^g_clearsOnInsertion)(BOOL) NS_AVAILABLE_IOS(6_0);
 
-- (UITextView *(^)(UIEdgeInsets))g_textContainerInset;
-- (UITextView *(^)(NSDictionary<NSString *, id> *))g_linkTextAttributes NS_AVAILABLE_IOS(7_0);
-- (UITextView *(^)(UIView *))g_inputAccessoryView;
+@property (nonatomic, copy, readonly) UITextView *(^g_textContainerInset)(UIEdgeInsets);
+@property (nonatomic, copy, readonly) UITextView *(^g_linkTextAttributes)(NSDictionary<NSString *, id> *) NS_AVAILABLE_IOS(7_0);
+@property (nonatomic, copy, readonly) UITextView *(^g_inputAccessoryView)(UIView *);
 
 #pragma mark layer
 - (CALayer *)g_layerMaker;

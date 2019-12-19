@@ -20,28 +20,28 @@
 
 #pragma mark - collectionView
 
-- (UICollectionView *(^)(UICollectionViewLayout *))g_collectionViewLayout;
-- (UICollectionView *(^)(id <UICollectionViewDelegate>))g_delegate;
-- (UICollectionView *(^)(id <UICollectionViewDataSource>))g_dataSource;
-- (UICollectionView *(^)(id<UICollectionViewDataSourcePrefetching>))g_prefetchDataSource NS_AVAILABLE_IOS(10_0);
-- (UICollectionView *(^)(BOOL))g_prefetchingEnabled NS_AVAILABLE_IOS(10_0);
-- (UICollectionView *(^)(id <UICollectionViewDragDelegate>))g_dragDelegate API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos);
-- (UICollectionView *(^)(id <UICollectionViewDropDelegate>))g_dropDelegate API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos);;
+@property (nonatomic, copy, readonly) UICollectionView *(^g_collectionViewLayout)(UICollectionViewLayout *);
+@property (nonatomic, copy, readonly) UICollectionView *(^g_delegate)(id <UICollectionViewDelegate>);
+@property (nonatomic, copy, readonly) UICollectionView *(^g_dataSource)(id <UICollectionViewDataSource>);
+@property (nonatomic, copy, readonly) UICollectionView *(^g_prefetchDataSource)(id<UICollectionViewDataSourcePrefetching>) NS_AVAILABLE_IOS(10_0);
+@property (nonatomic, copy, readonly) UICollectionView *(^g_prefetchingEnabled)(BOOL) NS_AVAILABLE_IOS(10_0);
+@property (nonatomic, copy, readonly) UICollectionView *(^g_dragDelegate)(id <UICollectionViewDragDelegate>) API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos);
+@property (nonatomic, copy, readonly) UICollectionView *(^g_dropDelegate)(id <UICollectionViewDropDelegate>) API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos);;
 
-- (UICollectionView *(^)(BOOL))g_dragInteractionEnabled API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos);
-- (UICollectionView *(^)(UICollectionViewReorderingCadence))g_reorderingCadence API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos);
-- (UICollectionView *(^)(UIView *))g_backgroundView;
-- (UICollectionView *(^)(BOOL))g_allowsSelection;
-- (UICollectionView *(^)(BOOL))g_allowsMultipleSelection;
-- (UICollectionView *(^)(BOOL))g_remembersLastFocusedIndexPath NS_AVAILABLE_IOS(9_0);
+@property (nonatomic, copy, readonly) UICollectionView *(^g_dragInteractionEnabled)(BOOL) API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos);
+@property (nonatomic, copy, readonly) UICollectionView *(^g_reorderingCadence)(UICollectionViewReorderingCadence) API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos);
+@property (nonatomic, copy, readonly) UICollectionView *(^g_backgroundView)(UIView *);
+@property (nonatomic, copy, readonly) UICollectionView *(^g_allowsSelection)(BOOL);
+@property (nonatomic, copy, readonly) UICollectionView *(^g_allowsMultipleSelection)(BOOL);
+@property (nonatomic, copy, readonly) UICollectionView *(^g_remembersLastFocusedIndexPath)(BOOL) NS_AVAILABLE_IOS(9_0);
 
 // register class
-- (UICollectionView *(^)(Class, NSString *))g_registerClass;
-- (UICollectionView *(^)(UINib *, NSString *))g_registerNib;
-- (UICollectionView *(^)(Class, NSString *))g_registerHeaderClass;
-- (UICollectionView *(^)(UINib *, NSString *))g_registerHeaderNib;
-- (UICollectionView *(^)(Class, NSString *))g_registerFooterClass;
-- (UICollectionView *(^)(UINib *, NSString *))g_registerFooterNib;
+@property (nonatomic, copy, readonly) UICollectionView *(^g_registerClass)(Class, NSString *);
+@property (nonatomic, copy, readonly) UICollectionView *(^g_registerNib)(UINib *, NSString *);
+@property (nonatomic, copy, readonly) UICollectionView *(^g_registerHeaderClass)(Class, NSString *);
+@property (nonatomic, copy, readonly) UICollectionView *(^g_registerHeaderNib)(UINib *, NSString *);
+@property (nonatomic, copy, readonly) UICollectionView *(^g_registerFooterClass)(Class, NSString *);
+@property (nonatomic, copy, readonly) UICollectionView *(^g_registerFooterNib)(UINib *, NSString *);
 
 #pragma mark layer
 - (CALayer *)g_layerMaker;

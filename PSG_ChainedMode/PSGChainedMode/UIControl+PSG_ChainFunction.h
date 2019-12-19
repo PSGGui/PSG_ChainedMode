@@ -14,15 +14,15 @@
 
 - (UIView *)g_viewMaker;
 
-- (UIControl *(^)(BOOL))g_enabled;
-- (UIControl *(^)(BOOL))g_selected;
-- (UIControl *(^)(BOOL))g_highlighted;
-- (UIControl *(^)(UIControlContentVerticalAlignment))g_contentVerticalAlignment;
-- (UIControl *(^)(UIControlContentHorizontalAlignment))g_contentHorizontalAlignment;
-- (UIControl *(^)(id, SEL, UIControlEvents))g_addTarget;
-- (UIControl *(^)(id, SEL, UIControlEvents))g_removeTarget;
-- (UIControl *(^)(SEL, id, UIEvent *))g_sendActionTarget;
-- (UIControl *(^)(UIControlEvents))g_sendActionEvent;
+@property (nonatomic, copy, readonly) UIControl *(^g_enabled)(BOOL);
+@property (nonatomic, copy, readonly) UIControl *(^g_selected)(BOOL);
+@property (nonatomic, copy, readonly) UIControl *(^g_highlighted)(BOOL);
+@property (nonatomic, copy, readonly) UIControl *(^g_contentVerticalAlignment)(UIControlContentVerticalAlignment);
+@property (nonatomic, copy, readonly) UIControl *(^g_contentHorizontalAlignment)(UIControlContentHorizontalAlignment);
+@property (nonatomic, copy, readonly) UIControl *(^g_addTarget)(id, SEL, UIControlEvents);
+@property (nonatomic, copy, readonly) UIControl *(^g_removeTarget)(id, SEL, UIControlEvents);
+@property (nonatomic, copy, readonly) UIControl *(^g_sendActionTarget)(SEL, id, UIEvent *);
+@property (nonatomic, copy, readonly) UIControl *(^g_sendActionEvent)(UIControlEvents);
 
 #pragma mark layer
 

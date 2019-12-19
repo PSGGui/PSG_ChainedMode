@@ -15,32 +15,32 @@
 - (UIView *)g_viewMaker;
 
 #pragma mark - scrollView
-- (UIScrollView *(^)(CGPoint))g_contentOffset;
-- (UIScrollView *(^)(CGSize))g_contentSize;
-- (UIScrollView *(^)(UIEdgeInsets))g_contentInset;
-- (UIScrollView *(^)(UIScrollViewContentInsetAdjustmentBehavior))g_contentInsetAdjustmentBehavior API_AVAILABLE(ios(11.0),tvos(11.0));
+@property (nonatomic, copy, readonly) UIScrollView *(^g_contentOffset)(CGPoint);
+@property (nonatomic, copy, readonly) UIScrollView *(^g_contentSize)(CGSize);
+@property (nonatomic, copy, readonly) UIScrollView *(^g_contentInset)(UIEdgeInsets);
+@property (nonatomic, copy, readonly) UIScrollView *(^g_contentInsetAdjustmentBehavior)(UIScrollViewContentInsetAdjustmentBehavior) API_AVAILABLE(ios(11.0),tvos(11.0));
 
-- (UIScrollView *(^)(id<UIScrollViewDelegate>))g_delegate;
-- (UIScrollView *(^)(BOOL))g_directionalLockEnabled;
-- (UIScrollView *(^)(BOOL))g_bounces;
-- (UIScrollView *(^)(BOOL))g_alwaysBounceVertical;
-- (UIScrollView *(^)(BOOL))g_alwaysBounceHorizontal;
-- (UIScrollView *(^)(BOOL))g_pagingEnabled;
-- (UIScrollView *(^)(BOOL))g_scrollEnabled;
-- (UIScrollView *(^)(BOOL))g_showsHorizontalScrollIndicator;
-- (UIScrollView *(^)(BOOL))g_showsVerticalScrollIndicator;
-- (UIScrollView *(^)(UIEdgeInsets))g_scrollIndicatorInsets;
-- (UIScrollView *(^)(UIScrollViewIndicatorStyle))g_indicatorStyle;
-- (UIScrollView *(^)(CGFloat))g_decelerationRate;
-- (UIScrollView *(^)(BOOL))g_delaysContentTouches;
-- (UIScrollView *(^)(BOOL))g_canCancelContentTouches;
-- (UIScrollView *(^)(CGFloat))g_minimumZoomScale;
-- (UIScrollView *(^)(CGFloat))g_maximumZoomScale;
-- (UIScrollView *(^)(CGFloat))g_zoomScale;
-- (UIScrollView *(^)(BOOL))g_bouncesZoom;
-- (UIScrollView *(^)(BOOL))g_scrollsToTop;
-- (UIScrollView *(^)(UIScrollViewKeyboardDismissMode))g_keyboardDismissMode NS_AVAILABLE_IOS(7_0);
-- (UIScrollView *(^)(UIRefreshControl *))g_refreshControl NS_AVAILABLE_IOS(10_0);
+@property (nonatomic, copy, readonly) UIScrollView *(^g_delegate)(id<UIScrollViewDelegate>);
+@property (nonatomic, copy, readonly) UIScrollView *(^g_directionalLockEnabled)(BOOL);
+@property (nonatomic, copy, readonly) UIScrollView *(^g_bounces)(BOOL);
+@property (nonatomic, copy, readonly) UIScrollView *(^g_alwaysBounceVertical)(BOOL);
+@property (nonatomic, copy, readonly) UIScrollView *(^g_alwaysBounceHorizontal)(BOOL);
+@property (nonatomic, copy, readonly) UIScrollView *(^g_pagingEnabled)(BOOL);
+@property (nonatomic, copy, readonly) UIScrollView *(^g_scrollEnabled)(BOOL);
+@property (nonatomic, copy, readonly) UIScrollView *(^g_showsHorizontalScrollIndicator)(BOOL);
+@property (nonatomic, copy, readonly) UIScrollView *(^g_showsVerticalScrollIndicator)(BOOL);
+@property (nonatomic, copy, readonly) UIScrollView *(^g_scrollIndicatorInsets)(UIEdgeInsets);
+@property (nonatomic, copy, readonly) UIScrollView *(^g_indicatorStyle)(UIScrollViewIndicatorStyle);
+@property (nonatomic, copy, readonly) UIScrollView *(^g_decelerationRate)(CGFloat);
+@property (nonatomic, copy, readonly) UIScrollView *(^g_delaysContentTouches)(BOOL);
+@property (nonatomic, copy, readonly) UIScrollView *(^g_canCancelContentTouches)(BOOL);
+@property (nonatomic, copy, readonly) UIScrollView *(^g_minimumZoomScale)(CGFloat);
+@property (nonatomic, copy, readonly) UIScrollView *(^g_maximumZoomScale)(CGFloat);
+@property (nonatomic, copy, readonly) UIScrollView *(^g_zoomScale)(CGFloat);
+@property (nonatomic, copy, readonly) UIScrollView *(^g_bouncesZoom)(BOOL);
+@property (nonatomic, copy, readonly) UIScrollView *(^g_scrollsToTop)(BOOL);
+@property (nonatomic, copy, readonly) UIScrollView *(^g_keyboardDismissMode)(UIScrollViewKeyboardDismissMode) NS_AVAILABLE_IOS(7_0);
+@property (nonatomic, copy, readonly) UIScrollView *(^g_refreshControl)(UIRefreshControl *) NS_AVAILABLE_IOS(10_0);
 
 #pragma mark - subviews
 - (UITextView *)g_textViewMaker;

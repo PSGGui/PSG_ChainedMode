@@ -16,15 +16,15 @@
 
 #pragma mark -
 
-- (UIImageView *(^)(UIImage *))g_image;
-- (UIImageView *(^)(UIImage *))g_highlightedImage;
-- (UIImageView *(^)(BOOL))g_userInteractionEnabled;
-- (UIImageView *(^)(BOOL))g_highlighted;
-- (UIImageView *(^)(NSArray<UIImage *> *))g_animationImages;
-- (UIImageView *(^)( NSArray<UIImage *> *))g_highlightedAnimationImages;
-- (UIImageView *(^)(NSTimeInterval))g_animationDuration;
-- (UIImageView *(^)(NSInteger))g_animationRepeatCount;
-- (UIImageView *(^)(UIColor *))g_tintColor NS_AVAILABLE_IOS(7_0);
+@property (nonatomic, copy, readonly) UIImageView *(^g_image)(UIImage *);
+@property (nonatomic, copy, readonly) UIImageView *(^g_highlightedImage)(UIImage *);
+@property (nonatomic, copy, readonly) UIImageView *(^g_userInteractionEnabled)(BOOL);
+@property (nonatomic, copy, readonly) UIImageView *(^g_highlighted)(BOOL);
+@property (nonatomic, copy, readonly) UIImageView *(^g_animationImages)(NSArray<UIImage *> *);
+@property (nonatomic, copy, readonly) UIImageView *(^g_highlightedAnimationImages)( NSArray<UIImage *> *);
+@property (nonatomic, copy, readonly) UIImageView *(^g_animationDuration)(NSTimeInterval);
+@property (nonatomic, copy, readonly) UIImageView *(^g_animationRepeatCount)(NSInteger);
+@property (nonatomic, copy, readonly) UIImageView *(^g_tintColor)(UIColor *) NS_AVAILABLE_IOS(7_0);
 
 #pragma mark layer
 

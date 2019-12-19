@@ -17,52 +17,52 @@
 
 #pragma mark - UITextInputTraits
 
-- (UITextField *(^)(UITextAutocapitalizationType))g_autocapitalizationType;
-- (UITextField *(^)(UITextAutocorrectionType))g_autocorrectionType;
-- (UITextField *(^)(UITextSpellCheckingType))g_spellCheckingType NS_AVAILABLE_IOS(5_0);
-- (UITextField *(^)(UITextSmartQuotesType))g_smartQuotesType NS_AVAILABLE_IOS(11_0);
-- (UITextField *(^)(UITextSmartDashesType))g_smartDashesType NS_AVAILABLE_IOS(11_0);
-- (UITextField *(^)(UITextSmartInsertDeleteType))g_smartInsertDeleteType NS_AVAILABLE_IOS(11_0);
-- (UITextField *(^)(UIKeyboardType))g_keyboardType;
-- (UITextField *(^)(UIKeyboardAppearance))g_keyboardAppearance;
-- (UITextField *(^)(UIReturnKeyType))g_returnKeyType;
-- (UITextField *(^)(BOOL))g_enablesReturnKeyAutomatically;
-- (UITextField *(^)(BOOL))g_secureTextEntry;
-- (UITextField *(^)(UITextContentType))g_textContentType NS_AVAILABLE_IOS(10_0);
+@property (nonatomic, copy, readonly) UITextField *(^g_autocapitalizationType)(UITextAutocapitalizationType);
+@property (nonatomic, copy, readonly) UITextField *(^g_autocorrectionType)(UITextAutocorrectionType);
+@property (nonatomic, copy, readonly) UITextField *(^g_spellCheckingType)(UITextSpellCheckingType) NS_AVAILABLE_IOS(5_0);
+@property (nonatomic, copy, readonly) UITextField *(^g_smartQuotesType)(UITextSmartQuotesType) NS_AVAILABLE_IOS(11_0);
+@property (nonatomic, copy, readonly) UITextField *(^g_smartDashesType)(UITextSmartDashesType) NS_AVAILABLE_IOS(11_0);
+@property (nonatomic, copy, readonly) UITextField *(^g_smartInsertDeleteType)(UITextSmartInsertDeleteType) NS_AVAILABLE_IOS(11_0);
+@property (nonatomic, copy, readonly) UITextField *(^g_keyboardType)(UIKeyboardType);
+@property (nonatomic, copy, readonly) UITextField *(^g_keyboardAppearance)(UIKeyboardAppearance);
+@property (nonatomic, copy, readonly) UITextField *(^g_returnKeyType)(UIReturnKeyType);
+@property (nonatomic, copy, readonly) UITextField *(^g_enablesReturnKeyAutomatically)(BOOL);
+@property (nonatomic, copy, readonly) UITextField *(^g_secureTextEntry)(BOOL);
+@property (nonatomic, copy, readonly) UITextField *(^g_textContentType)(UITextContentType) NS_AVAILABLE_IOS(10_0);
 
 #pragma mark - UIContentSizeCategoryAdjusting
-- (UITextField *(^)(BOOL))g_adjustsFontForContentSizeCategory NS_AVAILABLE_IOS(10_0);
+@property (nonatomic, copy, readonly) UITextField *(^g_adjustsFontForContentSizeCategory)(BOOL) NS_AVAILABLE_IOS(10_0);
 
 #pragma mark - textField
 
-- (UITextField *(^)(NSString *))g_text;
-- (UITextField *(^)(NSAttributedString *))g_attributedText NS_AVAILABLE_IOS(6_0);
-- (UITextField *(^)(UIColor *))g_textColor;
-- (UITextField *(^)(UIFont *))g_font;
-- (UITextField *(^)(NSTextAlignment))g_textAlignment;
-- (UITextField *(^)(UITextBorderStyle))g_borderStyle;
-- (UITextField *(^)(NSDictionary<NSString *, id> *))g_defaultTextAttributes;
-- (UITextField *(^)(NSString *))g_placeholder;
+@property (nonatomic, copy, readonly) UITextField *(^g_text)(NSString *);
+@property (nonatomic, copy, readonly) UITextField *(^g_attributedText)(NSAttributedString *) NS_AVAILABLE_IOS(6_0);
+@property (nonatomic, copy, readonly) UITextField *(^g_textColor)(UIColor *);
+@property (nonatomic, copy, readonly) UITextField *(^g_font)(UIFont *);
+@property (nonatomic, copy, readonly) UITextField *(^g_textAlignment)(NSTextAlignment);
+@property (nonatomic, copy, readonly) UITextField *(^g_borderStyle)(UITextBorderStyle);
+@property (nonatomic, copy, readonly) UITextField *(^g_defaultTextAttributes)(NSDictionary<NSString *, id> *);
+@property (nonatomic, copy, readonly) UITextField *(^g_placeholder)(NSString *);
 
-- (UITextField *(^)(NSAttributedString *))g_attributedPlaceholder;
-- (UITextField *(^)(BOOL))g_clearsOnBeginEditing;
-- (UITextField *(^)(BOOL))g_adjustsFontSizeToFitWidth;
-- (UITextField *(^)(id<UITextFieldDelegate>))g_delegate;
-- (UITextField *(^)(UIImage *))g_background;
-- (UITextField *(^)(UIImage *))g_disabledBackground;
+@property (nonatomic, copy, readonly) UITextField *(^g_attributedPlaceholder)(NSAttributedString *);
+@property (nonatomic, copy, readonly) UITextField *(^g_clearsOnBeginEditing)(BOOL);
+@property (nonatomic, copy, readonly) UITextField *(^g_adjustsFontSizeToFitWidth)(BOOL);
+@property (nonatomic, copy, readonly) UITextField *(^g_delegate)(id<UITextFieldDelegate>);
+@property (nonatomic, copy, readonly) UITextField *(^g_background)(UIImage *);
+@property (nonatomic, copy, readonly) UITextField *(^g_disabledBackground)(UIImage *);
 
-- (UITextField *(^)(BOOL))g_allowsEditingTextAttributes NS_AVAILABLE_IOS(6_0);
-- (UITextField *(^)(NSDictionary<NSString *, id> *))g_typingAttributes NS_AVAILABLE_IOS(6_0);
-- (UITextField *(^)(UITextFieldViewMode))g_clearButtonMode;
-- (UITextField *(^)(UIView *))g_leftView;
-- (UITextField *(^)(UITextFieldViewMode))g_leftViewMode;
-- (UITextField *(^)(UIView *))g_rightView;
-- (UITextField *(^)(UITextFieldViewMode))g_rightViewMode;
-- (UITextField *(^)(BOOL))g_clearsOnInsertion NS_AVAILABLE_IOS(6_0);
-- (UITextField *(^)(id, SEL, UIControlEvents))g_targetAction;
+@property (nonatomic, copy, readonly) UITextField *(^g_allowsEditingTextAttributes)(BOOL) NS_AVAILABLE_IOS(6_0);
+@property (nonatomic, copy, readonly) UITextField *(^g_typingAttributes)(NSDictionary<NSString *, id> *) NS_AVAILABLE_IOS(6_0);
+@property (nonatomic, copy, readonly) UITextField *(^g_clearButtonMode)(UITextFieldViewMode);
+@property (nonatomic, copy, readonly) UITextField *(^g_leftView)(UIView *);
+@property (nonatomic, copy, readonly) UITextField *(^g_leftViewMode)(UITextFieldViewMode);
+@property (nonatomic, copy, readonly) UITextField *(^g_rightView)(UIView *);
+@property (nonatomic, copy, readonly) UITextField *(^g_rightViewMode)(UITextFieldViewMode);
+@property (nonatomic, copy, readonly) UITextField *(^g_clearsOnInsertion)(BOOL) NS_AVAILABLE_IOS(6_0);
+@property (nonatomic, copy, readonly) UITextField *(^g_targetAction)(id, SEL, UIControlEvents);
 
-- (UITextField *(^)(UIView *))g_inputAccessoryView;
-- (UITextField *(^)(UIView *))g_inputView;
+@property (nonatomic, copy, readonly) UITextField *(^g_inputAccessoryView)(UIView *);
+@property (nonatomic, copy, readonly) UITextField *(^g_inputView)(UIView *);
 
 #pragma mark layer
 - (CALayer *)g_layerMaker;

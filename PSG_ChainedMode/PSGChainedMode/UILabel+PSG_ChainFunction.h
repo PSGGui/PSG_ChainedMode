@@ -17,26 +17,26 @@
 - (UIView *)g_viewMaker;
 
 #pragma mark - label
-- (UILabel *(^)(NSString *))g_text;
-- (UILabel *(^)(UIFont *))g_font;
-- (UILabel *(^)(UIColor *))g_textColor;
-- (UILabel *(^)(UIColor *))g_shadowColor;
-- (UILabel *(^)(CGSize))g_shadowOffset;
-- (UILabel *(^)(NSTextAlignment))g_textAlignment;
-- (UILabel *(^)(NSLineBreakMode))g_lineBreakMode;
-- (UILabel *(^)(NSAttributedString *))g_attributedText;
+@property (nonatomic, copy, readonly) UILabel *(^g_text)(NSString *);
+@property (nonatomic, copy, readonly) UILabel *(^g_font)(UIFont *);
+@property (nonatomic, copy, readonly) UILabel *(^g_textColor)(UIColor *);
+@property (nonatomic, copy, readonly) UILabel *(^g_shadowColor)(UIColor *);
+@property (nonatomic, copy, readonly) UILabel *(^g_shadowOffset)(CGSize);
+@property (nonatomic, copy, readonly) UILabel *(^g_textAlignment)(NSTextAlignment);
+@property (nonatomic, copy, readonly) UILabel *(^g_lineBreakMode)(NSLineBreakMode);
+@property (nonatomic, copy, readonly) UILabel *(^g_attributedText)(NSAttributedString *);
 
-- (UILabel *(^)(UIColor *))g_highlightedTextColor;
-- (UILabel *(^)(BOOL))g_highlighted;
-- (UILabel *(^)(BOOL))g_userInteractionEnabled;
-- (UILabel *(^)(BOOL))g_enabled;
-- (UILabel *(^)(NSInteger))g_numberOfLines;
-- (UILabel *(^)(BOOL))g_adjustsFontSizeToFitWidth;
-- (UILabel *(^)(UIBaselineAdjustment))g_baselineAdjustment;
-- (UILabel *(^)(CGFloat))g_minimumScaleFactor NS_AVAILABLE_IOS(6_0);
+@property (nonatomic, copy, readonly) UILabel *(^g_highlightedTextColor)(UIColor *);
+@property (nonatomic, copy, readonly) UILabel *(^g_highlighted)(BOOL);
+@property (nonatomic, copy, readonly) UILabel *(^g_userInteractionEnabled)(BOOL);
+@property (nonatomic, copy, readonly) UILabel *(^g_enabled)(BOOL);
+@property (nonatomic, copy, readonly) UILabel *(^g_numberOfLines)(NSInteger);
+@property (nonatomic, copy, readonly) UILabel *(^g_adjustsFontSizeToFitWidth)(BOOL);
+@property (nonatomic, copy, readonly) UILabel *(^g_baselineAdjustment)(UIBaselineAdjustment);
+@property (nonatomic, copy, readonly) UILabel *(^g_minimumScaleFactor)(CGFloat) NS_AVAILABLE_IOS(6_0);
 
-- (UILabel *(^)(BOOL))g_allowsDefaultTighteningForTruncation NS_AVAILABLE_IOS(9_0);
-- (UILabel *(^)(CGFloat))g_preferredMaxLayoutWidth NS_AVAILABLE_IOS(6_0);
+@property (nonatomic, copy, readonly) UILabel *(^g_allowsDefaultTighteningForTruncation)(BOOL) NS_AVAILABLE_IOS(9_0);
+@property (nonatomic, copy, readonly) UILabel *(^g_preferredMaxLayoutWidth)(CGFloat) NS_AVAILABLE_IOS(6_0);
 - (UILabel *)g_sizeToFit;
 
 #pragma mark layer
